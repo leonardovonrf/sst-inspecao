@@ -15,17 +15,8 @@ class AuthManager {
             this.currentUser = JSON.parse(savedUser);
             this.isAuthenticated = true;
             
-            // Se estiver na página de login e já autenticado, redirecionar
-            if (window.location.pathname.includes('index.html') || window.location.pathname === '/') {
-                this.redirectToDashboard();
-            }
-        } else {
-            // Se não estiver autenticado e não estiver na página de login, redirecionar
-            if (!window.location.pathname.includes('index.html') && window.location.pathname !== '/') {
-                this.redirectToLogin();
-            }
-        }
     }
+}
 
     // A NOVA FUNÇÃO DE LOGIN (CONECTADA AO BACKEND)
     async login(email, password) {
