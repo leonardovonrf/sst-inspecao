@@ -97,6 +97,27 @@ body {
     margin-bottom: 2rem;
 }
 
+.logos-header {
+    display: flex;             /* Mágica que coloca lado a lado */
+    justify-content: center;   /* Centraliza tudo */
+    align-items: center;       /* Alinha na altura */
+    gap: 15px;                 /* Espaço entre as logos */
+    margin-bottom: 20px;       /* Espaço para o título */
+}
+
+.login-logo {
+    max-width: 80px;           /* Tamanho controlado (ajuste se ficar pequeno) */
+    height: auto;              /* Mantém a proporção */
+    object-fit: contain;
+}
+
+/* Opcional: Uma linha vertical cinza entre elas */
+.logo-divider {
+    width: 1px;
+    height: 50px;              /* Altura da linha */
+    background-color: #ddd;    /* Cor da linha */
+}
+
 .logo {
     display: flex-start;
     align-items: center;
